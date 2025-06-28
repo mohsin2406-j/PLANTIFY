@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0F0202"
+    tools:context=".ui.base.SplashActivity">
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="150sp"
+        android:layout_height="150sp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:contentDescription="Logo"
+        android:src="@drawable/plantify" />
+
+    <TextView
+        android:id="@+id/splashText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/logo"
+        android:layout_marginTop="0dp"
+        android:layout_centerHorizontal="true"
+        android:text="Plantify"
+        android:textColor="#119518"
+        android:textSize="45sp"
+        android:textStyle="bold" />
+    <TextView
+        android:id="@+id/splash2Text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/logo"
+        android:layout_marginTop="60dp"
+        android:layout_centerHorizontal="true"
+        android:text="Grow Your World With Our Plants!"
+        android:textColor="#FFFFFF"
+        android:textSize="15sp"
+        android:textStyle="normal" />
+    <TextView
+        android:id="@+id/splash3Text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/logo"
+        android:layout_marginTop="290dp"
+        android:layout_centerHorizontal="true"
+        android:text="powered by www.plantify.com"
+        android:textColor="#9B9DBA"
+        android:textSize="19sp"
+        android:textStyle="bold"/>
+
+</RelativeLayout>
