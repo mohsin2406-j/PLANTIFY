@@ -12,7 +12,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:scaleType="centerCrop"
-        android:src="@drawable/logimage"/>
+        android:src="@drawable/logimage"
+        tools:ignore="MissingConstraints" />
 
     <TextView
         android:id="@+id/TextWelcomeback"
@@ -42,6 +43,48 @@
         android:textStyle="bold"
         app:layout_constraintTop_toBottomOf="@+id/TextWelcomeback"
         tools:layout_editor_absoluteX="56dp" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/editTextEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_20"
+        android:background="@drawable/rounded_edittext"
+        android:hint="@string/enter_email"
+        android:inputType="textEmailAddress"
+        android:padding="@dimen/margin_20"
+        android:textColor="@color/black"
+        android:textColorHint="@color/darkgreen"
+        android:textSize="@dimen/margin_15"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@+id/TextWelcome"
+        tools:ignore="SpUsage" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/editTextPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:background="@drawable/rounded_edittext"
+        android:inputType="numberPassword"
+        android:hint="@string/enter_password"
+        android:layout_marginTop="@dimen/margin_20"
+        android:textSize="@dimen/margin_15"
+        android:padding="@dimen/margin_20"
+        android:textStyle="bold"
+        android:textColorHint="@color/darkgreen"
+        app:layout_constraintTop_toBottomOf="@+id/editTextEmail" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/buttonLogin"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/default_button"
+        app:layout_constraintTop_toBottomOf="@+id/editTextPassword"
+        android:background="@color/darkgreen"
+        android:text="@string/str_login"
+        android:textColor="@color/white"
+        android:textSize="@dimen/margin_20"
+        android:layout_marginVertical="@dimen/margin_50"/>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
