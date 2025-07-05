@@ -86,5 +86,33 @@
         android:textSize="@dimen/margin_20"
         android:layout_marginVertical="@dimen/margin_50"/>
 
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/do_not_have_account"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="88dp"
+        android:text="@string/str_dont_have_account"
+        android:textColor="@color/black"
+        android:textAlignment="center"
+        android:textSize="@dimen/font_12"
+        app:layout_constraintEnd_toEndOf="@+id/Signup"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonLogin" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/Signup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/padding_87"
+        android:layout_marginEnd="@dimen/margin_96"
+        android:onClick="onMyButtonClick"
+        android:text="@string/str_sign_up"
+        android:textColor="@color/black"
+        android:textSize="@dimen/font_12"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/do_not_have_account"
+        app:layout_constraintTop_toBottomOf="@+id/buttonLogin"/>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

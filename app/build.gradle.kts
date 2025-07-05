@@ -50,5 +50,10 @@ dependencies {
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
-    implementation("androidx.core:core-splashscreen:1.0.0")
+    implementation(libs.glide)
+    implementation("androidx.core:core-splashscreen:1.0.1")
+    implementation(platform("com.google.firebase:firebase-bom:33.16.0"))
+    implementation("com.google.firebase:firebase-analytics")
+    implementation("com.google.firebase:firebase-auth:23.2.1")
+    implementation("androidx.viewpager2:viewpager2:1.1.0")
 }
