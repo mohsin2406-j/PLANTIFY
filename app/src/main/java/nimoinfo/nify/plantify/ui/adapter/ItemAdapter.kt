@@ -1,6 +1,5 @@
 package nimoinfo.nify.plantify.ui.adapter
 
-import android.R.attr.text
 import nimoinfo.nify.plantify.R
 import android.content.Context
 import android.view.LayoutInflater
@@ -9,8 +8,6 @@ import nimoinfo.nify.plantify.databinding.ItemlayoutBinding
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import nimoinfo.nify.plantify.ui.data.Plant
-
-
 
 class ItemAdapter(
     val context: Context,
@@ -38,12 +35,11 @@ class ItemAdapter(
 
         fun bind(dataModal: Plant, onClickListener: OnClickListener) {
             binding.textView.text = dataModal.dataItemName
-            Glide.with(binding.root.context)
+            Glide.with(context)
                 .load(dataModal.titleImage)
                 .centerCrop()
-                .placeholder(R.drawable.plantify)
+                .placeholder(R.drawable.warning)
                 .into(binding.imageview)
-
-            }
+             }
         }
 }
