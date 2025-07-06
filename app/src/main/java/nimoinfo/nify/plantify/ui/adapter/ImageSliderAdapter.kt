@@ -8,8 +8,9 @@ import android.widget.ImageView
 import com.bumptech.glide.Glide
 import androidx.viewpager.widget.PagerAdapter
 import nimoinfo.nify.plantify.R
+import nimoinfo.nify.plantify.ui.utils.MasterDataUtils
 
-class ImageSlideAdapter(
+class ImageSliderAdapter(
     private val context: Context,
     private var imageList: ArrayList<String>,
 ) : PagerAdapter() {

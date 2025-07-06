@@ -19,10 +19,10 @@ class SplashActivity : AppCompatActivity() {
                 if (PreferenceHelper.getOnBoardingShow(this) == "true") {
                     startActivity(Intent(this, HomeMainActivity::class.java))
                 }else{
-                    startActivity(Intent(this, OnboardingActivity::class.java))
+                    startActivity(Intent(this, LoginActivity::class.java))
                 }
             }else{
-                startActivity(Intent(this, LoginActivity::class.java))
+                startActivity(Intent(this, OnboardingActivity::class.java))
             }
 
             finish()

@@ -1,7 +1,7 @@
 package nimoinfo.nify.plantify.ui.utils
 
 import android.content.Context
-import nimoinfo.nify.plantify.ui.adapter.ImageSlideAdapter
+import nimoinfo.nify.plantify.ui.adapter.ImageSliderAdapter
 import nimoinfo.nify.plantify.ui.data.Plant
 
 
@@ -50,10 +50,11 @@ object MasterDataUtils {
 
         val itemList = ArrayList<String>()
 
-        itemList.add("https://www.powermaxfitness.net/uploads/thumb/800_600_1733736318_product_09122024145518.png")
-        itemList.add("https://www.freepik.com/premium-vector/dieffenbachia-home-plant-isolated-flat-vector-illustration-white-background_348245002.htm")
-        itemList.add("https://www.powermaxfitness.net/uploads/thumb/800_600_1571289430_product_17102019104710.jpg")
-        itemList.add("https://4.imimg.com/data4/EA/RV/MY-8497149/pec-fly-1000x1000.jpg")
+        itemList.add("https://media.istockphoto.com/id/1181366400/photo/in-the-hands-of-trees-growing-seedlings-bokeh-green-background-female-hand-holding-tree-on.jpg?s=612x612&w=0&k=20&c=jWUMrHgjMY9zQXsAwZFb1jfM6KxZE16-IXI1bvehjQM=")
+        itemList.add("https://www.pngall.com/wp-content/uploads/2016/07/Plants-Free-Download-PNG.png")
+        itemList.add("https://www.thespruce.com/grow-great-garlic-3016629")
+        itemList.add("https://www.thespruce.com/purple-ice-plant-2132553")
+
         return itemList
     }
 }
